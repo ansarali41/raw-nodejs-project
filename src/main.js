@@ -1,6 +1,6 @@
 const router = require('nodejs-basic-routing');
 const http = require("http");
-const {MongoClient, Db} = require('mongodb');
+const {MongoClient} = require('mongodb');
 
 function DBClient(adapter = "mongodb", options = {}) {
     this.client = new MongoClient("mongodb://localhost/nodejs_mongodb");
